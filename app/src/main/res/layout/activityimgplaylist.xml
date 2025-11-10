@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/khung_playlist_ngang"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/customkhungplaylist">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_song"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imgsong1"
+        android:background="@drawable/custombotronimg"
+        android:clipToOutline="true"
+        app:shapeAppearanceOverlay="@style/Botronanh"
+        />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/mau_khung_o_tim_kiem"
+    >
+    <ImageButton
+        android:id="@+id/nut_home"
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:src="@drawable/ic_icon_home"
+        android:contentDescription="h"
+        android:layout_weight="1"
+        android:background="@color/mau_khung_o_tim_kiem"
+
+        />
+    <ImageButton
+        android:id="@+id/nut_search"
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:src="@drawable/ic_icon_search"
+        android:contentDescription="."
+        android:layout_weight="1"
+        android:background="@color/mau_khung_o_tim_kiem"
+        />
+    <ImageButton
+        android:id="@+id/nut_thumuc"
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:src="@drawable/id_icon_fold"
+        android:contentDescription="."
+        android:layout_weight="1"
+        android:background="@color/mau_khung_o_tim_kiem"
+        />
+    <ImageButton
+        android:id="@+id/nut_tim"
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:src="@drawable/ic_icon_heart"
+        android:contentDescription="."
+        android:layout_weight="1"
+        android:background="@color/mau_khung_o_tim_kiem"
+        />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="40dp"
+    android:id="@+id/khung_thanh_thoi_luong">
+    <TextView
+        android:id="@+id/thoi_gian_bat_dau"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="00:00"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/thoi_gian_ket_thuc"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="03:00"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <SeekBar
+        android:id="@+id/thanh_thoi_luong"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thoi_gian_bat_dau"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

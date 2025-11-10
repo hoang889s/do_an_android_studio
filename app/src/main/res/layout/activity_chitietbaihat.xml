@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chi_tiet_bai_hat"
+    android:background="@color/mau_nen_anh_den"
+
+    >
+    <ImageButton
+        android:id="@+id/nut_bam_quay_lai_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/customhinhvuong"
+        android:src="@drawable/ic_prev_back"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/text_quay_lai"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/tieu_de_bai_hat"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Top 100"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ScrollView
+        android:id="@+id/thanh_doc_cua_chi_tiet_bai_hat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tieu_de_bai_hat"
+        app:layout_constraintBottom_toTopOf="@id/khung_thanh_menu"
+        >
+        <LinearLayout
+            android:id="@+id/khung_anh_bai_hat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            >
+            <include android:id="@+id/layout_img" layout="@layout/activity_img_chi_tiet_bai_hat"/>
+            <include android:id="@+id/layout_info" layout="@layout/activity_namesong_heart"/>
+            <include layout="@layout/activity_seekbar_time"/>
+            <include layout="@layout/activity_toolmusic"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/khung_thanh_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <include layout="@layout/activity_menu"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

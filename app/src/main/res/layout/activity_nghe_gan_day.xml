@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/khung_nghe_gan_day"
+    android:layout_width="340dp"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+    <TextView
+        android:id="@+id/nghe_gan_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_nghe_gan_day"
+        android:textSize="20sp"
+        android:fontFamily="@font/lalezar"
+        android:gravity="center"
+        android:textColor="@color/mau_cam_thanh_tab"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/xem_tat_ca_nghe_gan_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_xem_tat_ca"
+        android:fontFamily="@font/lalezar"
+        />
+</LinearLayout>

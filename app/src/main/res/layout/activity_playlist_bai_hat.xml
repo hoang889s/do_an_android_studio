@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/khung_playlist_ngang"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/customkhungplaylist"
+    android:gravity="center_vertical"
+    >
+    <LinearLayout
+
+        android:id="@+id/khung_playlist_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        >
+        <include layout="@layout/activityimgplaylist"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/khung_txt_playlist_doc"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        >
+        <include layout="@layout/activity_playlist_text_bai_hat"/>
+        <ImageButton
+            android:id="@+id/nut_play"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:background="@drawable/customnutplay"
+            android:src="@drawable/ic_play_fill"
+            android:contentDescription="."
+
+            />
+    </LinearLayout>
+</LinearLayout>

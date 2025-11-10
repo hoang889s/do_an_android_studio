@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mau_nen_anh_den">#0c1015</color>
+    <color name="mau_cam_thanh_tab">#ee4f13</color>
+    <color name="mau_chu_o_tim_kiem">#3E3C3C</color>
+    <color name="mau_khung_o_tim_kiem">#141921</color>
+    <color name="mau_trong_suot_60">#99FFFFFF</color>
+    <color name="mau_trong_suot_20">#33FFFFFF</color>
+
+</resources>

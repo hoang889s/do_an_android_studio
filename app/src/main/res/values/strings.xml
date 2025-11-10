@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="doan_gioi_thieu_dau_trang1">
+        “How is it that music can, without words, evoke our laughter, our fears, our highest aspirations?”
+    </string>
+    <string name="text_bat_dau">Get Started</string>
+    <string name="text_am_nhac_danh_cho_ban">ÂM NHẠC DÀNH CHO BẠN</string>
+    <string name="text_tim_kiem_bai_hat">Tìm kiếm bài hát...</string>
+    <string name="text_xem_tat_ca">Xem tất cả</string>
+    <string name="text_bai_hat_noi_bat">Bài hát nổi bật</string>
+    <string name="text_playlist_cua_ban">Playlist của bạn</string>
+    <string name="text_nghe_gan_day">Nghe gần đây</string>
+    <string name="text_quay_lai">.</string>
+    <string name="name_song1">The Captain Single</string>
+    <string name="name_song2">I Dont\'t Know Why</string>
+    <string name="name_song3">Man of the moon</string>
+</resources>
