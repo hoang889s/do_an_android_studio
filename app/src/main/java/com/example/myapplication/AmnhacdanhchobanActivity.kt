@@ -1,8 +1,11 @@
 package com.example.myapplication
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.MotionEvent
+import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.FrameLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +18,9 @@ import com.google.android.material.imageview.ShapeableImageView
 
 class AmnhacdanhchobanActivity: AppCompatActivity() {
     private lateinit var btn_prev : ImageButton
+    private lateinit var btn_folder: ImageButton
+    private lateinit var btn_lib: ImageButton
+    private lateinit var btn_home: ImageButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25,9 +31,30 @@ class AmnhacdanhchobanActivity: AppCompatActivity() {
             insets
 
         }
+        // vùng intent qua các trang khai báo 4 cái nút
+        val includeV:View = findViewById<View>(R.id.id_menu_amnhacchoban)
+        btn_home=includeV.findViewById<ImageButton>(R.id.nut_home)
+        btn_home.imageTintList = ColorStateList.valueOf(getColor(R.color.mau_cam_thanh_tab))
+        btn_folder = includeV.findViewById<ImageButton>(R.id.nut_thumuc)
+        btn_folder.setOnClickListener {
+            val intent =  Intent(this, BaiHatYeuThichActivity::class.java)
+            //btn_folder.imageTintList = ColorStateList.valueOf(getColor(R.color.mau_cam_thanh_tab))
+            startActivity(intent)
+        }
+        btn_lib = includeV.findViewById<ImageButton>(R.id.nut_tim)
+        btn_lib.setOnClickListener {
+            val intent1 = Intent(this, ThuVienActivity::class.java)
+            //btn_lib.imageTintList = ColorStateList.valueOf(getColor(R.color.mau_cam_thanh_tab))
+            startActivity(intent1)
+        }
+
+
         btn_prev=findViewById<ImageButton>(R.id.nut_bam_quay_lai)
         // quay về lại trang chủ
         btn_prev.setOnClickListener {
+            //btn_folder.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
+            //btn_home.imageTintList = ColorStateList.valueOf(getColor(R.color.mau_cam_thanh_tab))
+            //btn_lib.imageTintList = ColorStateList.valueOf(getColor(R.color.white))
             finish()
         }
         // khai bai view khung danh sách
@@ -74,6 +101,7 @@ class AmnhacdanhchobanActivity: AppCompatActivity() {
             params.setMargins(12, 8, 12, 8)
             itemView.layoutParams = params
             khungDanhsach.addView(itemView)
+
         }
     }
 }

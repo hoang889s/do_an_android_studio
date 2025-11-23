@@ -23,6 +23,9 @@
         <activity android:name=".AmnhacdanhchobanActivity"></activity>
         <activity android:name=".ChitietbaihatActivity"></activity>
         <activity android:name=".ThebaihatActivity"></activity>
+        <activity android:name=".BaiHatYeuThichActivity"></activity>
+        <activity android:name=".ThuVienActivity"></activity>
+
     </application>
 
 </manifest>
