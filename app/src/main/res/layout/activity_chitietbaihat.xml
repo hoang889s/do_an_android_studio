@@ -51,8 +51,8 @@
             >
             <include android:id="@+id/layout_img" layout="@layout/activity_img_chi_tiet_bai_hat"/>
             <include android:id="@+id/layout_info" layout="@layout/activity_namesong_heart"/>
-            <include layout="@layout/activity_seekbar_time"/>
-            <include layout="@layout/activity_toolmusic"/>
+            <include android:id="@+id/id_seekbar" layout="@layout/activity_seekbar_time"/>
+            <include android:id="@+id/id_menu_toolmusic" layout="@layout/activity_toolmusic"/>
 
         </LinearLayout>
     </ScrollView>

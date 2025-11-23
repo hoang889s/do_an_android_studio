@@ -14,4 +14,10 @@
     <string name="name_song1">The Captain Single</string>
     <string name="name_song2">I Dont\'t Know Why</string>
     <string name="name_song3">Man of the moon</string>
+    <string name="text_bai_hat_yeu_thich">Bài hát yêu thích</string>
+    <string name="text_nut_phat_ngau_nhien">PHÁT NGẪU NHIÊN</string>
+    <string name="text_playlist">Playlist</string>
+    <string name="bai_hat">Bài hát</string>
+    <string name="tac_gia">Tác giả</string>
+    <string name="thu_vien">Thư Viện</string>
 </resources>

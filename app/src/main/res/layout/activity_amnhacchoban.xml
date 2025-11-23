@@ -89,6 +89,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         >
-        <include layout="@layout/activity_menu"/>
+        <include android:id="@+id/id_menu_amnhacchoban" layout="@layout/activity_menu"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
