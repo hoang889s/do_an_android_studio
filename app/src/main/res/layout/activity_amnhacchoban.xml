@@ -1,94 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/am_nhac_cho_ban"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/am_nhac_cho_ban"
     android:background="@color/mau_nen_anh_den"
-    >
+    android:padding="16dp"
+    tools:context=".AmnhacdanhchobanActivity">
+
     <ImageButton
         android:id="@+id/nut_bam_quay_lai"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:background="@drawable/customhinhvuong"
-        android:src="@drawable/ic_prev_back"
-        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="@string/text_quay_lai"
-        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_prev_back"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tieu_de_trang_chu"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lalezar"
         android:text="@string/text_am_nhac_danh_cho_ban"
         android:textColor="@color/white"
         android:textSize="32sp"
-        app:layout_constraintTop_toBottomOf="@+id/nut_bam_quay_lai"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:fontFamily="@font/lalezar"
-        />
-    <LinearLayout
-        android:id="@+id/khung_o_tim_kiem"
-        android:layout_width="320dp"
-        android:layout_height="48dp"
-        android:background="@drawable/customkhungthanhtimkiem"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tieu_de_trang_chu"
-        >
-        <ImageButton
-            android:id="@+id/nut_tim_kiem"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@drawable/customkhungthanhtimkiem"
-            android:src="@drawable/ic_search_icon"
-            android:contentDescription="nút search"
-            />
-        <EditText
-            android:id="@+id/o_tim_kiem"
-            android:layout_width="250dp"
-            android:layout_height="48dp"
-            android:hint="@string/text_tim_kiem_bai_hat"
-            android:textColorHint="@color/mau_chu_o_tim_kiem"
-            />
+        app:layout_constraintTop_toBottomOf="@+id/nut_bam_quay_lai" />
 
-    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/khung_o_tim_kiem"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/text_tim_kiem_bai_hat"
+        android:textColorHint="@color/mau_chu_o_tim_kiem"
+        app:boxStrokeColor="@color/mau_cam_thanh_tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tieu_de_trang_chu"
+        app:startIconDrawable="@drawable/ic_search_icon"
+        app:startIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/o_tim_kiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:inputType="text"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <ScrollView
         android:id="@+id/cuon_doc_trang"
-        android:layout_height="400dp"
-        android:layout_width="340dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         android:fillViewport="true"
-        android:scrollbars="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/khung_o_tim_kiem"
+        app:layout_constraintBottom_toTopOf="@+id/khung_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/khung_o_tim_kiem">
+
         <LinearLayout
             android:id="@+id/khung_doc_am_nhac_cho_ban"
-            android:layout_width="340dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-            <include layout="@layout/activity_bai_hat_noi_bat"/>
-            <include layout="@layout/activity_list_bai_hat_noi_bat"/>
-            <include layout="@layout/activity_playlist_cua_ban"/>
-            <include layout="@layout/activity_playlist_bai_hat"/>
-            <include layout="@layout/activity_nghe_gan_day"/>
-            <include layout="@layout/activity_list_bai_hat_noi_bat"/>
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_bai_hat_noi_bat" />
+            <include layout="@layout/activity_list_bai_hat_noi_bat" />
+            <include layout="@layout/activity_playlist_cua_ban" />
+            <include layout="@layout/activity_playlist_bai_hat" />
+            <include layout="@layout/activity_nghe_gan_day" />
+            <include layout="@layout/activity_list_bai_hat_noi_bat" />
         </LinearLayout>
     </ScrollView>
+
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/khung_menu"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:id="@+id/khung_menu"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        >
-        <include android:id="@+id/id_menu_amnhacchoban" layout="@layout/activity_menu"/>
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include
+            android:id="@+id/mini_player_container"
+            layout="@layout/mini_player"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/id_menu_amnhacchoban"
+            layout="@layout/activity_menu" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
