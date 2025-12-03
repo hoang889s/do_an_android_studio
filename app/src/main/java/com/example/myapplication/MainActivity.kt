@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        btnStarthomePage = findViewById<Button>(R.id.nut_bam_bat_dau)
+        btnStarthomePage = findViewById(R.id.nut_bam_bat_dau)
         btnStarthomePage.setOnClickListener {
             val intent = Intent(this, AmnhacdanhchobanActivity::class.java)
             startActivity(intent)

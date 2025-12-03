@@ -20,4 +20,12 @@
     <string name="bai_hat">Bài hát</string>
     <string name="tac_gia">Tác giả</string>
     <string name="thu_vien">Thư Viện</string>
+    <string name="play_pause_button">Play/Pause</string>
+    <string name="more_options_button">More options</string>
+    <string name="like_button">Like</string>
+    <string name="home_button">Home</string>
+    <string name="search_button">Search</string>
+    <string name="folder_button">Folder</string>
+    <string name="heart_button">Heart</string>
+    <string name="play_button">Play</string>
 </resources>
